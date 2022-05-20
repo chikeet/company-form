@@ -1,2 +1,9 @@
 services:
-	- App\Router\RouterFactory::createRouter
+    # routing
+    - App\Router\RouterFactory::createRouter
+
+    # form factories
+    - App\Forms\CompanyRegistration\ICompanyRegistrationFormFactory
+
+    # services
+    - App\Services\CompanyRegistration\CompanyRegistrationSessionService

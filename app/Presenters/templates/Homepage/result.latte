@@ -1,0 +1,21 @@
+{block content}
+<div>
+	<h1 n:block=title>Firma zaregistrována</h1>
+</div>
+
+<div id="content">
+	<h2>Údaje firmy</h2>
+	<p>
+		<b>Název firmy:</b> {$companyRegistrationData->name}<br />
+		<b>Adresa sídla:</b> {$companyRegistrationData->address|breakLines}<br />
+		<b>IČO:</b> {$companyRegistrationData->in}<br />
+		<b>DIČ:</b> {$companyRegistrationData->tin}<br />
+		<b>Jméno statutárního zástupce:</b> {$companyRegistrationData->statutoryRepresentativeName}<br />
+		<b>E-mailová adresa statutárního zástupce:</b> {$companyRegistrationData->statutoryRepresentativeEmail}<br />
+	</p>
+	<p>
+		<a n:href="Homepage:default">Zpět na registrační formulář &gt;&gt;</a>
+	</p>
+</div>
+
+{/block}
