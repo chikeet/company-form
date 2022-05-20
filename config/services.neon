@@ -3,7 +3,9 @@ services:
     - App\Router\RouterFactory::createRouter
 
     # form factories
+    - App\Forms\CompanyIn\ICompanyInFormFactory
     - App\Forms\CompanyRegistration\ICompanyRegistrationFormFactory
 
     # services
+    - App\Services\Ares\AresService
     - App\Services\CompanyRegistration\CompanyRegistrationSessionService
